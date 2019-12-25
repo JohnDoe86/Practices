@@ -12,7 +12,7 @@ logging.captureWarnings(True)
 
 
 def getHtmlText(url):
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0", 'Cookie':'_zap=e908d6c1-72be-4bfb-b01e-78c3d2bc7f17; d_c0="AMCm3ct8MRCPTn1n4wquVdif6EHKcd11_i0=|1570978955"; tst=r; _xsrf=9b218d83-8fa4-4389-871e-ad53837136b8; __utmc=51854390; __utmv=51854390.100-1|2=registration_date=20140729=1^3=entry_date=20140729=1; q_c1=b7ad78fc05e44d09b7e650f8553edec2|1576381860000|1571097416000; _ga=GA1.2.924102450.1573721518; __utma=51854390.924102450.1573721518.1576989968.1576998727.36; __utmz=51854390.1576998727.36.27.utmcsr=zhihu.com|utmccn=(referral)|utmcmd=referral|utmcct=/; capsion_ticket="2|1:0|10:1577000549|14:capsion_ticket|44:NGE2MWZjN2NhYmUxNGUxNWI0NWU0ZmI5MjRkZGE1MDc=|aaedb9297d17bf1324ad0bbeb9ade88fbb56ff639f353fd0c1b66983587faa73"; z_c0="2|1:0|10:1577000551|4:z_c0|92:Mi4xZHhKdkFBQUFBQUFBd0tiZHkzd3hFQ1lBQUFCZ0FsVk5aMnpzWGdDbEN6dWplSEZxZ1RWYmYtTktUYzM1U3RjQURR|1104644a2fd38db2d6ac543eb6d73872189116babac7d14062f6cb9d04262309"; Hm_lvt_98beee57fd2ef70ccdd5ca52b9740c49=1576766801,1576828895,1576829013,1577000680; tgw_l7_route=060f637cd101836814f6c53316f73463; Hm_lpvt_98beee57fd2ef70ccdd5ca52b9740c49=1577002405'}
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0", 'Cookie':'your cookies'}
     r = requests.get(url, headers = headers, verify = False)
     r.encoding = 'utf-8'
     return r.content
